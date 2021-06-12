@@ -1,13 +1,38 @@
+<!-- <html>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <form method="POST" action="" enctype="multipart/form-data"></form>
+    <div class="wrapper">
+        <div class="file-upload">
+        
+          <input type="file">
+        
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
+      <input type="submit" name="submit">
+    </form>
+</html> -->
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
     <title>File Upload</title>
   </head>
   <body>
-    <h1>File Upload</h1>
     <form method="POST" action="" enctype="multipart/form-data">
+      <div class="wrapper">
+        <div class="file-upload">
       <p><input type="file" name="file"></p>
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="file-upload">
       <p><input type="submit" value="Submit"></p>
+</div>
+</div>
+
     </form>
   </body>
 </html>

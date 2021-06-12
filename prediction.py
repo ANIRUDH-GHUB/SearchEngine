@@ -8,7 +8,6 @@ model=keras.models.load_model("model.h5")
 
 def recognizer(filename):
     
-
     img_width, img_height = 224,224
 
     img = image.load_img(filename, target_size=(img_width, img_height))
